@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/858/858719.png" type="image/x-icon">
+  <title>Dashboard Tech 2026: El Mercado Real</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- ApexCharts -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ======================== -->
+  <!-- PROFILE TRIGGER BUTTON -->
+  <!-- ======================== -->
+  <div class="profile-trigger-container">
+    <img 
+      src="https://avatars.githubusercontent.com/u/38921558?v=4" 
+      alt="Juancito Pena" 
+      class="cyber-avatar" 
+      data-bs-toggle="modal" 
+      data-bs-target="#profileModal"
+      title="Ver Perfil de Juancito Pena"
+    >
+  </div>
+
+  <!-- HERO -->
+  <div class="hero-section">
+    <div class="hero-badge">📊 Análisis de Mercado: 19/12/2025</div>
+    <h1>El Mapa del Empleo Tech 2026 🚀</h1>
+    <p class="hero-subtitle mt-3">
+      Un análisis profundo basado en miles de ofertas reales y datos objetivos. 
+      Descubre las <strong>14 áreas</strong> con más demanda y los <strong>Frameworks</strong> que realmente dan trabajo hoy.
+    </p>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- PARTE 1: LAS 14 ÁREAS DE LA PROGRAMACIÓN -->
+  <!-- ============================================== -->
+  
+  <h2 class="section-title"><i class="bi bi-layers-fill text-primary"></i> Ranking de las 14 Áreas Clave</h2>
+  
+  <div class="glass-card p-4 mb-4">
+    <div class="row">
+        <div class="col-12">
+            <h5 class="text-white mb-3 fw-bold">💡 Resumen Ejecutivo de Áreas</h5>
+            <p style="color: #e2e8f0; font-size: 1.05rem; line-height: 1.8;">
+                Contrario a la creencia popular impulsada por el "hype", las áreas tradicionales de infraestructura y gestión de datos superan ampliamente a sectores como Blockchain o Videojuegos. La <strong>Gestión de Bases de Datos</strong> se corona como la habilidad transversal más solicitada, seguida de cerca por <strong>DevOps</strong>, evidenciando la necesidad crítica de mantener y escalar sistemas estables.
+            </p>
+        </div>
+    </div>
+  </div>
+
+  <!-- KPIs Top Areas -->
+  <div class="row g-4 mb-4">
+    <div class="col-lg-3 col-md-6">
+      <div class="glass-card kpi-card" style="border-bottom: 4px solid var(--color-db);">
+        <i class="bi bi-database-fill kpi-icon" style="color: var(--color-db);"></i>
+        <div class="kpi-value">4,671</div>
+        <div class="kpi-label">#1 Bases de Datos 🗄️</div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="glass-card kpi-card" style="border-bottom: 4px solid var(--color-devops);">
+        <i class="bi bi-cloud-check-fill kpi-icon" style="color: var(--color-devops);"></i>
+        <div class="kpi-value">3,978</div>
+        <div class="kpi-label">#2 DevOps & Sistemas ⚙️</div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="glass-card kpi-card" style="border-bottom: 4px solid #ec4899;">
+        <i class="bi bi-globe kpi-icon" style="color: #ec4899;"></i>
+        <div class="kpi-value">3,327</div>
+        <div class="kpi-label">#3 Desarrollo Web 🌐</div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="glass-card kpi-card" style="border-bottom: 4px solid #f59e0b;">
+        <i class="bi bi-graph-up-arrow kpi-icon" style="color: #f59e0b;"></i>
+        <div class="kpi-value">3,253</div>
+        <div class="kpi-label">#4 Big Data 📊</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts Part 1 -->
+  <div class="row g-4">
+    <div class="col-lg-12">
+      <div class="glass-card p-4">
+        <h5 class="mb-4 text-white">📉 Demanda Laboral por Área (Total de Ofertas)</h5>
+        <div id="chartAreasBar"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================== -->
+  <!-- PARTE 2: FRAMEWORKS Y LENGUAJES -->
+  <!-- ============================================== -->
+
+  <h2 class="section-title"><i class="bi bi-code-slash text-warning"></i> Frameworks & Tecnologías 2026</h2>
+
+  <!-- Top 5 Frameworks Intro -->
+  <div class="mb-5">
+    <div class="d-flex align-items-center mb-4 gap-2 justify-content-center">
+        <span class="badge bg-danger rounded-pill px-3 py-2 fw-bold text-white shadow">HOT 🔥</span>
+        <h3 class="mb-0 fw-bold text-white">El "Big Five" del Desarrollo</h3>
+    </div>
+    
+    <div class="row g-3 row-cols-2 row-cols-md-5 justify-content-center">
+      <!-- Node -->
+      <div class="col">
+        <div class="glass-card fw-card fw-node">
+          <i class="bi bi-filetype-js fw-icon-img" style="color: var(--color-node)"></i>
+          <div class="fw-count">3,613</div>
+          <div class="fw-name">Node.js</div>
+        </div>
+      </div>
+      <!-- React -->
+      <div class="col">
+        <div class="glass-card fw-card fw-react">
+          <i class="bi bi-filetype-jsx fw-icon-img" style="color: var(--color-react)"></i>
+          <div class="fw-count">3,310</div>
+          <div class="fw-name">React</div>
+        </div>
+      </div>
+      <!-- Angular -->
+      <div class="col">
+        <div class="glass-card fw-card fw-angular">
+          <i class="bi bi-shield-fill-check fw-icon-img" style="color: var(--color-angular)"></i>
+          <div class="fw-count">3,182</div>
+          <div class="fw-name">Angular</div>
+        </div>
+      </div>
+      <!-- jQuery -->
+      <div class="col">
+        <div class="glass-card fw-card fw-jquery">
+          <i class="bi bi-hash fw-icon-img" style="color: var(--color-jquery)"></i>
+          <div class="fw-count">2,223</div>
+          <div class="fw-name">jQuery</div>
+        </div>
+      </div>
+      <!-- Bootstrap -->
+      <div class="col">
+        <div class="glass-card fw-card fw-bootstrap">
+          <i class="bi bi-bootstrap-fill fw-icon-img" style="color: var(--color-bootstrap)"></i>
+          <div class="fw-count">2,179</div>
+          <div class="fw-name">Bootstrap</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts Part 2 & Ecosystem -->
+  <div class="row g-4 mb-5">
+    <div class="col-lg-7">
+      <div class="glass-card p-4">
+        <h5 class="mb-4 text-white">📊 Ranking Completo de Frameworks</h5>
+        <div id="chartFrameworks"></div>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="glass-card p-4 h-100 d-flex flex-column">
+        <h5 class="mb-4 text-white">⚔️ Batalla de Ecosistemas</h5>
+        <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+            <div id="chartEcosystem" style="width: 100%;"></div>
+        </div>
+        
+        <!-- Insight Box Corregido -->
+        <div class="mt-4 p-3 rounded" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2);">
+          <h6 class="text-warning mb-2 fw-bold"><i class="bi bi-lightbulb-fill"></i> Insight Clave</h6>
+          <p class="small mb-0" style="color: #e2e8f0;">
+            El ecosistema <strong>JavaScript</strong> (Node, React, Angular, Vue, jQuery) es el rey absoluto, acumulando más del <strong>50%</strong> de todas las ofertas analizadas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABLA DETALLADA -->
+  <div class="glass-card p-4 mb-5">
+    <h5 class="text-white mb-4"><i class="bi bi-table me-2"></i> Desglose Detallado por Tecnología</h5>
+    <div class="table-responsive">
+      <table class="table table-custom align-middle mb-0">
+        <thead>
+          <tr>
+            <th style="width: 50px;">Rank</th>
+            <th>Tecnología</th>
+            <th>Categoría</th>
+            <th class="text-end">Ofertas Totales</th>
+            <th class="text-end">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="rank-circle bg-success bg-opacity-50 text-white">1</div></td>
+            <td><strong class="text-white"><i class="bi bi-filetype-js me-2" style="color: var(--color-node)"></i> Node.js</strong></td>
+            <td>Backend Runtime</td>
+            <td class="text-end text-white fw-bold">3,613</td>
+            <td class="text-end"><span class="badge bg-success">Dominante</span></td>
+          </tr>
+          <tr>
+            <td><div class="rank-circle bg-info bg-opacity-50 text-white">2</div></td>
+            <td><strong class="text-white"><i class="bi bi-filetype-jsx me-2" style="color: var(--color-react)"></i> React</strong></td>
+            <td>Frontend Lib</td>
+            <td class="text-end text-white fw-bold">3,310</td>
+            <td class="text-end"><span class="badge bg-success">Muy Alta</span></td>
+          </tr>
+          <tr>
+            <td><div class="rank-circle bg-danger bg-opacity-50 text-white">3</div></td>
+            <td><strong class="text-white"><i class="bi bi-shield-fill-check me-2" style="color: var(--color-angular)"></i> Angular</strong></td>
+            <td>Frontend FW</td>
+            <td class="text-end text-white fw-bold">3,182</td>
+            <td class="text-end"><span class="badge bg-success">Muy Alta</span></td>
+          </tr>
+          <tr>
+            <td><div class="rank-circle text-white">4</div></td>
+            <td><span class="text-white"><i class="bi bi-hash me-2 text-primary"></i> jQuery</span></td>
+            <td>Legacy Lib</td>
+            <td class="text-end text-white">2,223</td>
+            <td class="text-end"><span class="badge bg-warning text-dark">Estable</span></td>
+          </tr>
+          <tr>
+            <td><div class="rank-circle text-white">5</div></td>
+            <td><span class="text-white"><i class="bi bi-bootstrap-fill me-2 text-primary"></i> Bootstrap</span></td>
+            <td>CSS FW</td>
+            <td class="text-end text-white">2,179</td>
+            <td class="text-end"><span class="badge bg-warning text-dark">Estable</span></td>
+          </tr>
+           <tr>
+            <td><div class="rank-circle text-white">6</div></td>
+            <td><span class="text-white"><i class="bi bi-microsoft me-2 text-primary"></i> .NET</span></td>
+            <td>Framework</td>
+            <td class="text-end text-white">1,772</td>
+            <td class="text-end"><span class="badge bg-warning text-dark">Estable</span></td>
+          </tr>
+           <tr>
+            <td><div class="rank-circle text-white">7</div></td>
+            <td><span class="text-white"><i class="bi bi-cup-hot-fill me-2 text-warning"></i> Spring Boot</span></td>
+            <td>Java FW</td>
+            <td class="text-end text-white">1,716</td>
+            <td class="text-end"><span class="badge bg-warning text-dark">Estable</span></td>
+          </tr>
+           <tr>
+            <td><div class="rank-circle text-white">8</div></td>
+            <td><span class="text-white"><i class="bi bi-wordpress me-2 text-info"></i> WordPress</span></td>
+            <td>CMS</td>
+            <td class="text-end text-white">1,237</td>
+            <td class="text-end"><span class="badge bg-secondary">Nicho</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- ============================================== -->
+  <!-- PARTE 3: LA REALIDAD DEL 2026 (IA & FUTURO) -->
+  <!-- ============================================== -->
+
+  <h2 class="section-title"><i class="bi bi-robot text-success"></i> La Realidad del 2026: ¿Qué esperar? 🤖</h2>
+
+  <div class="row g-4 align-items-stretch">
+      
+      <!-- Columna Q&A -->
+      <div class="col-lg-6">
+        <div class="glass-card p-4 h-100">
+            <h4 class="text-white mb-4">Preguntas Frecuentes</h4>
+            
+            <div class="qa-item">
+                <div class="qa-question"><i class="bi bi-briefcase-fill text-primary"></i> ¿Hay trabajo para programadores en 2026?</div>
+                <div class="qa-answer">
+                    <strong>Absolutamente SÍ.</strong> Los datos son irrefutables. Solo en frameworks JS superamos las 10,000 vacantes. La demanda base es sólida.
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="qa-question"><i class="bi bi-cpu-fill text-danger"></i> ¿La IA ha reemplazado a la programación?</div>
+                <div class="qa-answer">
+                    <strong>No.</strong> La IA actúa como copiloto. Las áreas de infraestructura (DevOps, DBs) requieren supervisión humana crítica que la IA aún no puede proveer de forma autónoma.
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="qa-question"><i class="bi bi-graph-down-arrow text-warning"></i> ¿Qué pasa con el "Hype"?</div>
+                <div class="qa-answer">
+                    Tecnologías muy "queridas" en redes como <strong>Astro</strong> tienen apenas <strong>4 ofertas</strong>, mientras que la "vieja confiable" <strong>jQuery</strong> tiene más de 2,000. El mercado laboral es conservador.
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Columna Nuevas Tecnologías -->
+      <div class="col-lg-6">
+        <div class="glass-card reality-box h-100">
+            <div class="reality-title"><i class="bi bi-stars text-warning"></i> La Evolución del Rol: Integración de IA</div>
+            <p class="text-muted mb-4" style="color: #e2e8f0 !important;">
+                El perfil senior de 2026 no solo programa; orquesta inteligencias. Las nuevas habilidades "must-have" son:
+            </p>
+
+            <div class="mb-4">
+                <div class="text-white fw-bold mb-2"><i class="bi bi-person-gear text-success me-2"></i> Agentes de IA Autónomos</div>
+                <p class="small mb-0" style="color: #cbd5e1;">Sistemas capaces de razonar, planificar y ejecutar tareas complejas (búsqueda, coding, despliegue) sin intervención humana constante.</p>
+                <div class="mt-2">
+                    <span class="tech-pill">AutoGPT</span> <span class="tech-pill">BabyAGI</span> <span class="tech-pill">LangChain</span>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="text-white fw-bold mb-2"><i class="bi bi-diagram-3 text-info me-2"></i> Protocolo MCP</div>
+                <p class="small mb-0" style="color: #cbd5e1;">Model Context Protocol. El estándar emergente para conectar LLMs con el contexto real de tus datos y herramientas locales de forma segura.</p>
+                <div class="mt-2">
+                    <span class="tech-pill">Context Awareness</span> <span class="tech-pill">LLM Bridge</span>
+                </div>
+            </div>
+
+            <div>
+                <div class="text-white fw-bold mb-2"><i class="bi bi-lightning-charge-fill text-warning me-2"></i> Automatización Low-Code (n8n)</div>
+                <p class="small mb-0" style="color: #cbd5e1;">La orquestación de flujos de trabajo que integran servicios de IA se hace visualmente para ganar velocidad.</p>
+                <div class="mt-2">
+                    <span class="tech-pill">n8n</span> <span class="tech-pill">Zapier AI</span> <span class="tech-pill">Make</span>
+                </div>
+            </div>
+
+        </div>
+      </div>
+  </div>
+
+</div>
+
+<!-- MODAL PERFIL -->
+<div class="modal fade modal-cyber" id="profileModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <div class="modal-header border-0 justify-content-end p-0">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img 
+          src="https://avatars.githubusercontent.com/u/38921558?v=4" 
+          alt="Juancito Pena" 
+          class="modal-avatar-lg"
+        >
+        <h2 class="cyber-title mb-1">Juancito Pena</h2>
+        <div class="cyber-role">Data & AI Developer</div>
+        
+        <p class="cyber-bio mt-3">
+          Experto en análisis de datos, visualización y desarrollo full stack. 
+          Transformando datos complejos en interfaces intuitivas.
+          Apasionado por el ecosistema JavaScript y la automatización con IA.
+        </p>
+
+        <div class="cyber-services my-4">
+          <span class="badge rounded-pill">Data Analysis</span>
+          <span class="badge rounded-pill">Web Dev</span>
+          <span class="badge rounded-pill">Cybersecurity</span>
+          <span class="badge rounded-pill">AI Integration</span>
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+          <a href="#" class="cyber-social-btn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="cyber-social-btn"><i class="bi bi-github"></i></a>
+          <a href="#" class="cyber-social-btn"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="cyber-social-btn"><i class="bi bi-globe"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    
+    <h3 class="text-white mb-5 fw-bold">🚀 Valida estos datos tú mismo</h3>
+    
+    <div class="portal-grid">
+      <a href="https://www.linkedin.com/jobs/" target="_blank" class="btn-portal">
+        <i class="bi bi-linkedin linkedin-ico"></i> LinkedIn
+      </a>
+      <a href="https://www.infojobs.net/" target="_blank" class="btn-portal">
+        <i class="bi bi-briefcase-fill infojobs-ico"></i> InfoJobs
+      </a>
+      <a href="https://es.indeed.com/" target="_blank" class="btn-portal">
+        <i class="bi bi-search indeed-ico"></i> Indeed
+      </a>
+      <a href="https://www.tecnoempleo.com/" target="_blank" class="btn-portal">
+        <i class="bi bi-motherboard-fill tecno-ico"></i> Tecnoempleo
+      </a>
+    </div>
+
+    <div class="sources-box text-start text-md-center mx-auto">
+      <p class="text-white mb-3 fw-bold"><i class="bi bi-journal-bookmark-fill me-2"></i> Fuentes de Datos & Análisis:</p>
+      <ul class="list-unstyled text-muted small mb-0 d-inline-block text-start">
+        <li class="mb-2"><a href="#" class="text-decoration-none hover-white" style="color: #cbd5e1;">1. Peores y Mejores Áreas de la Programación en 2026 (Victor Robles WEB)</a></li>
+        <li><a href="#" class="text-decoration-none hover-white" style="color: #cbd5e1;">2. FRAMEWORKS MAS TRABAJO 2026 - Datos Objetivos (Victor Robles WEB)</a></li>
+      </ul>
+      <p class="mt-4 mb-0 text-white-50 fst-italic" style="font-size: 0.8rem;">
+        Análisis realizado el 19/12/2025
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- SCRIPTS (Bootstrap JS incluido para el modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
