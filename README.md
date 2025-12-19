@@ -1,94 +1,90 @@
 # 🚀 Dashboard Tech 2026: Análisis del Mercado Laboral de Programación
 
-Este repositorio contiene un **Dashboard Interactivo y Responsive** diseñado con un estilo **Glassmorphism Premium** y **Modo Oscuro**, basado en datos objetivos extraídos de múltiples portales de empleo líderes (LinkedIn, InfoJobs, Indeed, Tecnoempleo) actualizados al **19 de Diciembre de 2025**.
+Este repositorio contiene un **Dashboard Interactivo y Responsive** diseñado con un estilo **Glassmorphism Premium** y **Modo Oscuro**. El proyecto visualiza las tendencias del mercado laboral tecnológico basándose en datos objetivos extraídos de ofertas de empleo reales, analizadas y recopiladas por **Victor Robles WEB**.
 
-El proyecto visualiza las **Áreas de la Programación** y los **Frameworks/Tecnologías** con mayor demanda laboral para el año 2026, ofreciendo una visión clara y estratégica para desarrolladores y profesionales del sector.
+El dashboard ofrece una visión estratégica de las **Áreas de la Programación** y los **Frameworks** con mayor demanda para el año 2026, integrando análisis de Inteligencia Artificial y comparativas de ecosistemas.
 
 ---
 
 ## 📸 Vista Previa
 
-*(Aquí puedes incluir una captura de pantalla del dashboard una vez lo despliegues)*
+*(Inserta aquí una captura de pantalla del dashboard)*
 
 ---
 
-## ✨ Características Principales
+## 📊 Fuentes de Datos y Metodología
 
-*   **Diseño Premium UI/UX:** Estilo futurista con *Glassmorphism*, gradientes de neón y alto contraste para una legibilidad perfecta sobre fondo oscuro.
-*   **Totalmente Responsive:** Adaptable a dispositivos móviles, tablets y escritorios gracias a Bootstrap 5.
-*   **Visualización de Datos:** Gráficos interactivos y animados utilizando la librería **ApexCharts** (Barras, Radar, Donut).
-*   **Análisis Completo:**
-    *   Ranking de las **14 Áreas** principales de IT.
-    *   Ranking de los **13 Frameworks** más demandados.
-    *   Comparativa de Ecosistemas (JavaScript vs PHP vs .NET vs Java vs Python).
-*   **Secciones Interactivas:**
-    *   **KPIs:** Indicadores clave de rendimiento para las áreas top.
-    *   **Top 5 Frameworks:** Tarjetas visuales con los líderes del mercado.
-    *   **Tabla Detallada:** Desglose completo con clasificación y estado.
-    *   **Perfil Oculto:** Un "Easter Egg" interactivo (Avatar Cyberpunk) que abre una modal con información de perfil.
-*   **Narrativa Ejecutiva:** Insights y conclusiones sobre la realidad del mercado, el impacto de la IA (Agentes, MCP, n8n) y el futuro del rol del desarrollador.
+Los datos visualizados en este proyecto han sido extraídos directamente de los siguientes análisis de mercado realizados por **Victor Robles WEB** (fecha de corte de datos: **19/12/2025**):
+
+### 1. Áreas de Programación
+*   **Fuente:** Video *"Peores y Mejores Áreas de la Programación en 2026"* - Victor Robles WEB.
+*   **Metodología:** Recuento manual y objetivo de ofertas de empleo activas buscando por área específica (ej. "Desarrollo Web", "Ciberseguridad", "Inteligencia Artificial").
+
+### 2. Frameworks y Tecnologías
+*   **Fuente:** Video *"FRAMEWORKS MAS TRABAJO 2026 - Datos Objetivos"* - Victor Robles WEB.
+*   **Metodología:** Recuento de vacantes activas buscando por tecnología específica (ej. "React", "Node.js", "Laravel", "Spring Boot").
+
+### 3. Portales de Empleo Analizados
+Para obtener estos datos, se consultaron las siguientes plataformas líderes:
+*   **LinkedIn Jobs**
+*   **InfoJobs**
+*   **Indeed**
+*   **Tecnoempleo**
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## ✨ Características del Dashboard
+
+*   **Diseño UI/UX Avanzado:** Estilo *Cyberpunk/Glassmorphism* con alto contraste para legibilidad perfecta sobre fondos oscuros.
+*   **Interactividad:**
+    *   **Avatar Interactivo:** Un "Easter Egg" en la parte superior que despliega una modal con perfil profesional.
+    *   **Gráficos Animados:** Implementados con **ApexCharts** (Barras distribuidas, Radar comparativo, Donut de ecosistemas).
+*   **Contenido Analítico:**
+    *   **Ranking de 14 Áreas IT:** Desde Bases de Datos hasta Desarrollo de Videojuegos.
+    *   **Ranking de 13 Frameworks:** El "Big Five" del desarrollo y tecnologías de nicho.
+    *   **Insights Ejecutivos:** Resúmenes sobre la realidad del mercado y el impacto de la IA.
+*   **Sección "La Realidad del 2026":** Análisis sobre Agentes de IA, Protocolo MCP y Automatización (n8n).
+
+---
+
+## 🛠️ Stack Tecnológico
 
 *   **HTML5:** Estructura semántica.
-*   **CSS3:** Estilos personalizados, variables CSS, animaciones (`@keyframes`), Flexbox y Grid.
-*   **Bootstrap 5:** Framework CSS para la maquetación responsive y componentes (Grid, Modales, Utilidades).
-*   **ApexCharts:** Librería de JavaScript para la creación de gráficos modernos e interactivos.
-*   **Bootstrap Icons:** Iconografía vectorial de alta calidad.
-*   **Google Fonts:** Tipografía `Inter` para legibilidad y `Share Tech Mono` para detalles técnicos.
+*   **CSS3:** Diseño responsivo, Grid/Flexbox, variables CSS, animaciones personalizadas (`heartbeat`) y efectos de neón.
+*   **Bootstrap 5:** Framework para el sistema de rejilla, componentes y modales.
+*   **ApexCharts.js:** Librería de visualización de datos.
+*   **Bootstrap Icons:** Iconografía vectorial.
+*   **Google Fonts:** Fuentes `Inter` (cuerpo) y `Share Tech Mono` (detalles técnicos).
 
 ---
 
-## 📊 Fuentes de Datos
+## 🚀 Instalación y Uso
 
-Los datos presentados en este dashboard han sido extraídos, analizados y consolidados a partir de los siguientes recursos de investigación de mercado, con fecha de corte **19/12/2025**:
+No se requiere instalación de paquetes npm ni servidores complejos. El proyecto utiliza librerías a través de CDN para máxima portabilidad.
 
-1.  **Peores y Mejores Áreas de la Programación en 2026** - Análisis por *Victor Robles WEB*.
-2.  **FRAMEWORKS MAS TRABAJO 2026 - Datos Objetivos** - Análisis por *Victor Robles WEB*.
-3.  **Portales de Empleo Consultados:**
-    *   LinkedIn Jobs
-    *   InfoJobs
-    *   Indeed
-    *   Tecnoempleo
+1.  Descarga el archivo `index.html`.
+2.  Ábrelo directamente en tu navegador web favorito (Chrome, Firefox, Edge, Safari).
+3.  ¡Explora los datos!
 
 ---
 
-## 🚀 Cómo Usar
+## 📝 Resumen de Datos Clave
 
-Simplemente descarga el archivo `index.html` (o copia el código completo proporcionado anteriormente) y ábrelo en tu navegador web favorito. No requiere instalación de dependencias ni servidor local, ya que utiliza librerías vía CDN.
+### Top 3 Áreas con Más Trabajo
+1.  🥇 **Gestión de Bases de Datos:** 4,671 ofertas.
+2.  🥈 **DevOps & Administración de Sistemas:** 3,978 ofertas.
+3.  🥉 **Desarrollo Web:** 3,327 ofertas.
 
----
-
-## 📝 Estructura de Datos (Resumen)
-
-### Top 5 Áreas (Oportunidades de Empleo)
-1.  **Bases de Datos:** 4,671
-2.  **DevOps & Sistemas:** 3,978
-3.  **Desarrollo Web:** 3,327
-4.  **Big Data:** 3,253
-5.  **IoT (Internet of Things):** 2,525
-
-### Top 5 Frameworks
-1.  **Node.js:** 3,613 (Dominante)
-2.  **React:** 3,310 (Muy Alta)
-3.  **Angular:** 3,182 (Muy Alta)
-4.  **jQuery:** 2,223 (Estable/Legado)
-5.  **Bootstrap:** 2,179 (Estable)
+### Top 3 Frameworks Dominantes
+1.  🥇 **Node.js:** 3,613 vacantes.
+2.  🥈 **React:** 3,310 vacantes.
+3.  🥉 **Angular:** 3,182 vacantes.
 
 ---
 
-## 🤖 La Realidad del 2026: IA y Futuro
+## 📄 Créditos
 
-El dashboard incluye una sección especial dedicada a la integración de la Inteligencia Artificial en el flujo de trabajo del desarrollador, destacando:
+*   **Análisis y Datos Originales:** Victor Robles WEB.
+*   **Desarrollo del Dashboard:** Generado por Asistente de IA (DeepSeek/ChatGPT) bajo instrucción de diseño y estructura.
 
-*   **Agentes de IA Autónomos** (AutoGPT, BabyAGI).
-*   **Protocolo MCP** (Model Context Protocol) para conectar LLMs con datos reales.
-*   **Automatización Low-Code** con herramientas como **n8n**.
-
----
-
-## 📄 Licencia
-
-Este proyecto es de uso libre para fines educativos y de referencia.
+Este proyecto es de código abierto y puede ser utilizado con fines educativos o informativos.
