@@ -85,6 +85,6 @@ No se requiere instalación de paquetes npm ni servidores complejos. El proyecto
 ## 📄 Créditos
 
 *   **Análisis y Datos Originales:** Victor Robles WEB.
-*   **Desarrollo del Dashboard:** Generado por Asistente de IA (DeepSeek/ChatGPT) bajo instrucción de diseño y estructura.
+*   **Desarrollo del Dashboard:** Generado por : Juancito Peña.
 
 Este proyecto es de código abierto y puede ser utilizado con fines educativos o informativos.
